@@ -10,14 +10,9 @@
   "routes": [
     {
       "src": "/OTP.html",
-      "dest": "/OTP.html",
       "headers": {
         "Cache-Control": "no-cache, no-store, must-revalidate"
       }
-    },
-    {
-      "src": "/index.html",
-      "dest": "/index.html"
     },
     {
       "src": "/(.*)",
@@ -26,7 +21,7 @@
   ],
   "headers": [
     {
-      "source": "/OTP.html",
+      "src": "/OTP.html",
       "headers": [
         {
           "key": "X-Content-Type-Options",
@@ -37,7 +32,7 @@
           "value": "DENY"
         },
         {
-          "key": "X-XSS-Protection", 
+          "key": "X-XSS-Protection",
           "value": "1; mode=block"
         },
         {
@@ -55,7 +50,7 @@
       ]
     },
     {
-      "source": "/(.*)",
+      "src": "/(.*)",
       "headers": [
         {
           "key": "X-Content-Type-Options",
@@ -68,7 +63,6 @@
       ]
     }
   ],
-  "env": {
-    "NODE_ENV": "production"
-  }
+  "cleanUrls": true,
+  "trailingSlash": false
 }
