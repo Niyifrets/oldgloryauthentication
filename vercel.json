@@ -21,7 +21,7 @@
   ],
   "headers": [
     {
-      "src": "/OTP.html",
+      "source": "/OTP.html",
       "headers": [
         {
           "key": "X-Content-Type-Options",
@@ -50,7 +50,7 @@
       ]
     },
     {
-      "src": "/(.*)",
+      "source": "/(.*)",
       "headers": [
         {
           "key": "X-Content-Type-Options",
