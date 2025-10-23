@@ -1,0 +1,8 @@
+{
+  "name": "old-glory-bank",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "echo 'No dev server for static site'",
+    "build": "echo 'No build step for static site'"
+  }
+}
